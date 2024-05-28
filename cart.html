@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Nio-x</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content name="keywords">
+  <meta content name="description">
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@600;800&display=swap"
+    rel="stylesheet">
+  <!-- Icon Font Stylesheet -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Libraries Stylesheet -->
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Template Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+  <!-- addd -->
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+
+  <title>NIO</title>
+
+  <link rel="stylesheet" href="./asset/css/style.css">
+
+  <!-- font-awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!--  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+  <!-- Spinner Start -->
+  <!-- <div id="spinner"
+        class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div> -->
+    <nav class="navbar navbar-expand-lg navbar-dark position-sticky" style="background-color: #EED5D5;">
+      <!-- Container wrapper -->
+      <div class="container">
+          <!-- Collapsible wrapper -->
+          <div class="d-flex flex-column flex-lg-row navbar-collapse justify-content-between p-1">
+              <!-- Left links -->
+              <div class="col-12 col-lg-7 d-flex justify-content-lg-end mb-2 mb-lg-0">
+                  <p class="mb-0 kdcolor top-fontsize text-center text-lg-end">
+                      Free shipping order on above <i class="fa-solid fa-indian-rupee-sign kd fs-6"></i> 1000+
+                  </p>
+              </div>
+              <!-- Left links -->
+              <div class="col-12 col-lg-3 fs-5 top-width d-flex justify-content-lg-end justify-content-center align-items-center">
+                  <p class="mb-0 kdcolor fw-bold text-nowrap" style="margin-right: 20px;">
+                      Gold Rate: 7600.00/gm
+                  </p>
+              </div>
+          </div>
+          <!-- Collapsible wrapper -->
+      </div>
+      <!-- Container wrapper -->
+  </nav>
+  
+
+  <style>
+    .header-place input {
+  border-radius: 5px !important;
+  padding: 5px 10px 5px 35px !important; /* Ensure enough space for the icon */
+  border: 1px solid #870029 !important;
+  outline: none !important;
+}
+
+.header-place {
+  max-width: 400px !important; /* Adjust as needed for your layout */
+}
+
+@media (min-width: 1200px) {
+  .navbar .d-flex.col-lg-5.justify-content-end.align-items-center {
+      margin-left: auto !important;
+  }
+}
+
+
+  </style>
+  
+  
+  
+  <header class="navbar-light navbar-sticky header-static p-0">
+      <!-- Nav START -->
+      <nav class="navbar navbar-expand-xl">
+          <div class="container">
+              <!-- Logo START -->
+              <a class="navbar-brand" href="index.html">
+                  <img class="dark-mode-item navbar-brand-item" src="./img/logo.png" alt="logo">
+              </a>
+              <!-- Logo END -->
+              <!-- Responsive navbar toggler -->
+              <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                  aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-animation"><i class="fa-solid fa-bars"></i></span>
+              </button>
+              <!-- Main navbar START -->
+              <div class="collapse col-lg-5 navbar-collapse ronni row" id="navbarCollapse">
+                  <ul class="navbar-nav navbar-nav-scroll overflow-auto header-font justify-content-end">
+                      <!-- Nav item 1 Demos -->
+                      <li class="nav-item dropdown kdplr">
+                          <a class="nav-link kdcolor main-header-font" href="index.html" id="demoMenu"
+                              aria-haspopup="true" aria-expanded="false">Home</a>
+                      </li>
+                      <li class="nav-item dropdown kdplr">
+                          <a class="nav-link kdcolor main-header-font" href="about.html" id="demoMenu"
+                              aria-haspopup="true" aria-expanded="false">About Us</a>
+                      </li>
+                      <li class="nav-item dropdown kdplr">
+                          <a class="nav-link kdcolor main-header-font" href="product.html" id="demoMenu"
+                              aria-haspopup="true" aria-expanded="false">Shop</a>
+                      </li>
+                      <li class="nav-item dropdown kdplr ml-lg-0">
+                          <a class="nav-link kdcolor main-header-font" href="contact-us.html" id="demoMenu"
+                              aria-haspopup="true" aria-expanded="false">Bulk Inquiry</a>
+                      </li>
+                  </ul>
+              </div>
+              <!-- Main navbar END -->
+              <!-- Profile START -->
+              <div class="d-flex col-lg-5 justify-content-end align-items-center">
+                  <div class="header-place position-relative w-100 align-items-end" style="max-width: 400px;"> <!-- Set a max-width here -->
+                      <input type="text" class="form-control" placeholder="Search For Gold Coin, Bar And Chains" style="width: 93%;">
+                      <i class="fa-solid fa-magnifying-glass kdcolor position-absolute" style="right: 50px; top: 32%;"></i>
+                  </div>
+                  <ul class="d-flex list-unstyled m-0 ms-3 align-items-center p-0">
+                      <li class="kdcolor" style="font-size: 12px; margin-right: 20px;">
+                          <i class="fa-solid fa-user d-block text-center kdcolor" style="font-size: 15px;"></i>Account
+                      </li>
+                      <a href="cart.html" style="text-decoration: none;">
+                          <li class="kdcolor" style="font-size: 12px;">
+                              <i class="fa-solid fa-cart-shopping d-block kdcolor" style="font-size: 15px;"></i>Cart
+                          </li>
+                      </a>
+                  </ul>
+              </div>
+              <!-- Profile END -->
+          </div>
+      </nav>
+      <!-- Nav END -->
+  </header>
+  
+
+
+  <section class="pt-4 pb-4 pt-md-5 pb-md-5 text-center mb-0 about-styles">
+    <div class="container py-2" style="background-image: url('https://www.gujaratgoldcentre.com/images/AboutUS-new.jpg');">
+      <h1 class="font-weight-semibold text-white text-center my-3 font-size-55">Cart</h1>      
+    </div>
+  </section>
+
+
+  
+  
+  <section class="homepad mt-5">
+
+    <div class="container"> 
+        <div class="row" style="
+        align-items: flex-start;
+    ">  
+      
+        <div class="col-lg-8">
+     
+                
+          <form action="https://www.gujaratgoldcentre.com/updatecart" method="POST" name="qtyUpdateForm" id="qtyUpdateForm">
+          <input type="hidden" name="_token" value="QuzwG0xzdIQpOpArjxFhBdGdyTMGxjbQ7nNjkCw8"> 
+          <div class="table-responsive rounded">
+          <table class="table table-bordered table-hover table-bordered">
+            <thead class="thead-dark font-size-14 text-uppercase">
+              <tr>
+                <th width="6%" scope="col" class="font-weight-semibold py-3 line-hight-1 px-2"></th>
+                <th width="20%" scope="col" class="font-weight-semibold  kdcolor py-3 line-hight-1 text-center">Product Image</th>
+                <th width="30%" scope="col" class="font-weight-semibold kdcolor py-3 line-hight-1">Product Name</th>
+                <th width="18%" scope="col" class="font-weight-semibold kdcolor py-3 line-hight-1 text-center px-2">Price</th>
+                <th width="10%" scope="col" class="font-weight-semibold kdcolor py-3 line-hight-1">Quantity</th>
+                <th width="18%" scope="col" class="font-weight-semibold kdcolor py-3 line-hight-1 text-center px-2">Sub Total</th>
+              </tr>
+            </thead>
+            <tbody class="font-size-15">   
+               
+                  
+              <tr scope="row">
+                <th class="align-middle px-2 text-center"><a href="javascript:void(0)" class="deleteCartProduct kdcolor" data-id="7"><i class="fa fa-trash font-size-18" aria-hidden="true"></i></a></th>
+                <td class="align-middle text-center">
+                  <!-- <img src="https://www.gujaratgoldcentre.com/storage/images/product_images/listpage_img/ListPageImg_7_1653998759.png" width="100" height="100"> -->
+                  <img src="./img/main-nio.png" width="100" height="100">
+                </td>            
+                <td class="align-middle line-hight-1">
+                  <a href="https://www.gujaratgoldcentre.com/product-detail/2gm-ggc-gold-coin" target="_blank" class="font-weight-semibold font-size-15 kdcolor text-gray-light text-uppercase line-hight-1 m-0" title="2gm GGC 24K  Gold Coin">1gm NIO 24K  Gold Coin</a>              
+                </td>
+                            <td class="align-middle font-weight-semibold kdcolor text-center px-2"><i class="font-size-14 kdcolor fa fa-inr p-0" aria-hidden="true"></i>            7939.00
+                <i data-toggle="tooltip" id="calculation" data-placement="top" title="Actual Price (15,280.00) + Making Charge (140.00) + Tax Amount (458.40)" class="fa fa-info-circle calc" aria-hidden="true"></i> </td>
+                <td class="align-middle">              
+                  <div class="quantity quantity-box position-relative">
+                    <input type="hidden" value="7">           
+                    <input class="number form-control text-center pl-0" name="qty[7]" data-id="7" id="qty_7" type="text" min="1" value="1" readonly="" fdprocessedid="mrtqyn"> 
+                    <div class="quantity-col position-absolute  " style="top: -6px; right: 0; display: grid;">
+                      <button class="plus bg-transparent border-0 font-size-21 kdcolor" type="button" data-id="7" fdprocessedid="4hm94">+</button>
+                      <button class="minus bg-transparent border-0 font-size-21 kdcolor" type="button" data-id="7" fdprocessedid="97n9qi">-</button>           
+                    </div>                
+                    <!-- <div class="quantity-col position-absolute">
+                      <a href="javascript:void(0)" class="arrow-top btn plus" data-id="7"></a>
+                      <a href="javascript:void(0)" class="arrow-bottom btn minus" data-id="7"></a>
+                    </div> -->
+                  </div>
+                </td>
+                 <td class="align-middle font-weight-semibold kdcolor text-center px-2"><i class="font-size-14  fa fa-inr p-0" aria-hidden="true"></i>                        7939.00
+                              
+              </td>
+              </tr>   
+                     
+              
+            </tbody>
+        </table>
+        </div>
+        <div class="pt-2 ">
+          <button type="submit" id="updatecart" class="btn  py-2 px-3 text-uppercase text-white kdbccolor font-weight-semibold font-size-16 updateCart col-12 col-sm-auto" fdprocessedid="03z4f"><span class="py-1 px-2 mr-4 d-block">Update Cart</span></button>
+        </div>
+         </form>
+      </div>
+    
+       <div class="col-lg-4 mt-4 mt-lg-0 pt-3 pt-lg-0">
+          <div class="card bg-light shadow mb-4">
+            <h4 class="card-header card-title kdbccolor font-weight-bold py-2 px-3 px-lg-4 mb-0 border-bottom-0"><span class="d-block pt-2 text-white font-size-18 pb-1">Shipping Pincode <label class="font-size-13"></label></span></h4>
+            <div class="card-body p-0">
+              <table class="table mb-0">                       
+                <tbody>           
+                <tr>                            
+                  <td colspan="2" class="p-3 p-lg-4"><!-- <b class="font-weight-semibold d-block mb-3 line-hight-1 text-primary">Shipping Pincode</b> -->
+                        <form method="GET" action="" name="checkRateForm" id="checkRateForm">
+                          <div class="row">
+                            <div class="col-md-12">
+                              
+                              <input type="hidden" id="shippingRateData" name="shippingRateData" value="">
+                              <div class="input-group enter-pincode rounded">                            
+    
+                              <input type="text" min="1" id="pincode" name="pincode" placeholder="Enter Pincode / ZIP" class="form-control bg-white border font-size-15" onkeypress="makeEnable()" fdprocessedid="bz6zo">                            
+                              <input type="hidden" id="productWeight" name="productWeight" value="400">
+                              <div class="input-group-append">
+                              <button type="submit" onclick="return validateForm();" class="btn kdbccolor py-2 px-3 text-uppercase text-white font-weight-semibold font-size-15 rounded" id="checkBtn" fdprocessedid="iszlqn"><span class="d-block pt-1">Check</span></button>
+                              </div>
+                              <div id="pincode_error"></div>
+                            </div>
+                            </div>
+                            </div>
+                        </form>
+                        <!-- <label class="font-weight-semibold d-block mt-3 line-hight-1 text-success" id="successMsg"></label> -->
+                        <b class="font-weight-semibold d-block mt-3 line-hight-1 kdcolor">Shipping Rate</b><label name="shippingRate" id="shippingRate" class="d-block ml-2 mt-3">-</label>
+                   </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          </div>
+          <div class="py-1"></div>
+          <div class="card bg-light shadow">
+            <h4 class="card-header card-title text-gray-light font-weight-bold py-2 px-3 px-lg-4 mb-0 border-bottom-0"><span class="d-block pt-2 font-size-18 pb-1">Cart Totals <label class="font-size-13"></label></span></h4>
+            <div class="card-body p-0">
+              <table class="table mb-0">                       
+                <tbody>
+                  <tr>                
+                    <td class="py-2 pl-3 pl-lg-4 pr-2" width="50%"><b class="font-weight-semibold text-gray-light">Total Products</b></td>
+                    <td class="text-uppercase py-2 pr-3 pr-lg-4 pl-2 text-right kdcolor font-weight-semibold font-size-18" width="50%">1
+                    </td>                
+                  </tr>
+                  <!-- <tr>                
+                    <td class="py-2 pl-3 pl-lg-4 pr-2"><b class="font-weight-semibold text-dark">Sub Total</b></td>
+                    <td class="text-uppercase py-2 pr-3 pr-lg-4 pl-2 text-right text-primary font-weight-semibold font-size-18"><b>₹ </b>15,878.00</td>                
+                  </tr>               -->
+                  <tr>  
+                    <td class="text-uppercase py-2 pl-3 pl-lg-4 pr-2 align-middle"><b class="font-weight-bold text-gray-light d-block font-size-18">Total</b></td>
+                    <td class="text-uppercase py-2 pr-3 pr-lg-4 pl-2 text-right kdcolor font-size-18"><input type="hidden" id="total" name="total" value="15878">
+                    <label id="totalPrice" name="totalPrice" class="m-0">
+                    <b>₹ </b>7939.00              </label> 
+                  <span class="font-size-10 kdcolor d-block">INCLUSIVE OF MAKING CHARGES AND ALL TAXES*</span>
+                </td>
+                  </tr> 
+                </tbody>
+              </table>          
+            </div>
+          </div>
+    
+          <div class="mt-4 text-center">
+                <a href="checkout.html" class="btn kdbccolor  py-2 px-4 text-uppercase font-weight-semibold font-size-18 d-block mb-5 d-sm-inline-block d-lg-block shadow"><span class="d-block text-white pt-2 pb-1">Proceed to Checkout <i class="fa fa-long-arrow-right font-size-16 ml-2" aria-hidden="true"></i></span></a> 
+              
+            </div>
+            
+           <!--  <div class="mt-3 font-weight-semibold text-center">
+              <label>Continue shopping <a href="https://www.gujaratgoldcentre.com/product-list/gold" class="text-primary font-weight-semibold font-size-16 ">Gold</a> / <a href="https://www.gujaratgoldcentre.com/product-list/silver" class="text-primary font-weight-semibold font-size-16 ">Silver</a></label>
+            </div> -->
+           
+      </div>
+    </div>
+    
+    <div class="row">  
+        <div class="col-lg-8">
+        </div>
+        <div class="col-lg-4 mt-4 mt-lg-0 pt-3 pt-lg-0">      
+        </div>
+      </div>
+      </div>
+    </section>
+
+
+
+    <footer class="foot-sec footer-border-redius kdbccolor pb-4">
+      <div class="container-fluid kdbccolor text-white pt-5" style="border-top-left-radius: 30%; border-top-right-radius: 30%; border: none;">
+          <div class="pb-4 mb-4">
+              <div class="row g-4 align-items-center">
+                  <div class="col-lg-3 col-md-6 d-flex justify-content-center align-items-center">
+                      <a href="./index.html">
+                          <img src="./img/footerlogo.png" alt="" class="img-fluid" style="padding-right: 78px ;@media only screen and (min-width: 768px) {
+                              .img {
+                                  padding-right: 0;
+                              }
+                          }">
+                      </a>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                      <div class="position-relative">
+                          <input class="form-control border-0 py-3 px-4 rounded-pill" type="text" placeholder="Your Email">
+                          <button type="submit" class="btn-1 btn-primary border-0 py-3 px-4 position-absolute rounded-pill text-white" style="top: 0; right: 0;">Subscribe Now</button>
+                      </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 d-flex justify-content-center justify-content-md-end pt-3 pb-3">
+                      <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle btn-footer" href="#"><i class="fa-brands fa-instagram text-white fs-3"></i></a>
+                      <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle btn-footer" href="#"><i class="fab fa-facebook-f text-white fs-3"></i></a>
+                      <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle btn-footer" href="#"><i class="fa-brands fa-whatsapp text-white fs-3"></i></a>
+                  </div>
+              </div>
+          </div>
+          <div class="row justify-content-center" style="place-items: flex-start;">
+              <div class="col-lg-4 col-md-6 mb-4">
+                  <div class="footer-item">
+                      <p class="text-white" style="font-size: 1.2rem;">With over 35 years of rich legacy in securities and commodities markets, KIFS Group presents you NIO Jewels, a blend of time-honoured tradition of bullion trading with contemporary craftsmanship, offering you a diverse and elegant collection of coins, bars, and jewelry that reflects the high standards of quality and design. Explore our exquisite range and experience the perfect fusion of tradition and innovation. Read more</p>
+                  </div>
+              </div>
+              <div class="col-lg-2 col-md-6 mb-4">
+                  <div class="footer-item">
+                      <h4 class="headcolor mb-3 fw-bold">Quick Links</h4>
+                      <a class="btn-link text-white d-block text-decoration-none footerline" href="#">Home</a>
+                      <a class="btn-link text-white d-block text-decoration-none footerline" href="#">About Us</a>
+                      <a class="btn-link text-white d-block text-decoration-none footerline" href="#">Shop</a>
+                  </div>
+              </div>
+              <div class="col-lg-2 col-md-6 mb-4">
+                  <div class="footer-item">
+                      <h4 class="headcolor mb-3 fw-bold">Policies</h4>
+                      <a class="btn-link text-white d-block text-decoration-none footerline" href="#">Our Blogs</a>
+                      <a class="btn-link text-white d-block text-decoration-none footerline" href="#">Terms & Conditions</a>
+                      <a class="btn-link text-white d-block text-decoration-none footerline" href="#">Privacy Policy</a>
+                      <a class="btn-link text-white d-block text-decoration-none footerline" href="#">Shipping Policy</a>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-6 mb-4">
+                  <div class="footer-item">
+                      <h4 class="headcolor fw-bold mb-3">Contact Info</h4>
+                      <p class="fw-bold">Address: <span style="font-weight: 100;">Shop no.7, Jewel World, Cotton Exchange building, Zaveri Bazaar, Kalbadevi, Mumbai 400 002</span></p>
+                      <p class="fw-bold">Email: <span style="font-weight: 100;">Example@gmail.com</span></p>
+                      <p class="fw-bold">Contact Number: <span style="font-weight: 100;">+9137962318</span></p>
+                      <p class="fw-bold">Payment Accepted:</p>
+                      <img src="https://img.icons8.com/?size=100&id=5RcHTSNy4fbL&format=png&color=000000" width="10%" alt="">
+                      <img src="https://img.icons8.com/?size=100&id=pFNd0FTuBU2Q&format=png&color=000000" width="10%" alt="">
+                      <img src="https://img.icons8.com/?size=100&id=13610&format=png&color=000000" width="10%" alt="">
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+  
+
+<!-- JavaScript Libraries -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script> -->
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/lightbox/js/lightbox.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<!-- Template Javascript -->
+<script src="js/main.js"></script>
+
+<!-- adddd -->
+
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+                integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+                crossorigin="anonymous"></script> -->
+</body>
+
+</html>

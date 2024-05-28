@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Fruitables - Vegetable Website Template</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@600;800&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+    </head>
+
+    <body>
+        <div id="spinner"
+        class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar start -->
+    <div class="container-fluid fixed-top">
+        <div class="container topbar bg-primary d-none d-lg-block">
+            <div class="d-flex justify-content-between">
+                <div class="top-info ps-2">
+                    <!-- <small class="me-3"><i class="fas fa-map-marker-alt me-2 text-secondary"></i> <a href="#" class="text-white">123 Street, New York</a></small> -->
+                    <!-- <small class="me-3"><i class="fas fa-envelope me-2 text-secondary"></i><a href="#" class="text-white">Email@Example.com</a></small> -->
+                </div>
+
+                <div class="top-link pe-2">
+                    <p>Gold Rate : 7600.00/gm </p>
+                    <!-- <button class="login-btn">
+                        <a href="#popup1">Log-in</a>
+                    </button> -->
+                    <div class="Click-here">Login</div>
+
+                
+                   
+                </div>
+            </div>
+        </div>
+        <div class="container px-0">
+            <nav class="navbar navbar-light bg-white navbar-expand-xl">
+                <a href="index.html" class="navbar-brand"><img src="./img/kifs.png" alt=""></a>
+                <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars text-primary"></span>
+                </button>
+                <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
+                    <div class="navbar-nav mx-auto">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="shop.html" class="nav-item nav-link">About Us</a>
+                        <a href="shop-detail.html" class="nav-item nav-link">Shop </a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                            <div class="dropdown-menu m-0 bg-secondary rounded-0">
+                                <a href="cart.html" class="dropdown-item">Gift</a>
+                                <a href="chackout.html" class="dropdown-item">Chackout</a>
+                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                                <a href="404.html" class="dropdown-item">404 Page</a>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="nav-item nav-link">Gift</a>
+                        <a href="contact.html" class="nav-item nav-link">Cart</a>
+
+                    </div>
+                    <div class="d-flex m-3 me-0">
+                        <button
+                            class="btn-search btn border border-secondary btn-md-square rounded-circle bg-white me-4"
+                            data-bs-toggle="modal" data-bs-target="#searchModal"><i
+                                class="fas fa-search text-primary"></i></button>
+                        <a href="#" class="position-relative me-4 my-auto">
+                            <i class="fa fa-shopping-bag fa-2x"></i>
+                            <!-- <span class="position-absolute bg-secondary rounded-circle d-flex align-items-center justify-content-center text-dark px-1" ></span> -->
+                        </a>
+                        <a href="#" class="my-auto">
+                            <i class="fas fa-user fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Modal Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center">
+                    <div class="input-group w-75 mx-auto d-flex">
+                        <input type="search" class="form-control p-3" placeholder="keywords"
+                            aria-describedby="search-icon-1">
+                        <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section>
+        <div class="container">
+            <div class="main-banner">
+                <img src="./img/Rectangle 243.png" alt="">
+            </div>
+        </div>
+    </section>
+        <!-- Single Page Header End -->
+
+
+        <!-- Fruits Shop Start-->
+
+               <!-- Single Product Start -->
+               <div class="container-fluid py-5 mt-5">
+                <div class="container py-5">
+                    <div class="row g-4 mb-5">
+                        <div class="col-lg-8 col-xl-9">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="border rounded">
+                                        <a href="#">
+                                            <img src="img/main-nio.png" class="img-fluid rounded" alt="Image">
+                                        </a>
+                                    </div>
+                                </div>
+                               
+                                <div class="col-lg-6">
+                                    <h4 class="fw-bold mb-3">1gm Nio 24K Gold Coin</h4>
+                                    <p class="mb-3">Category:Gold Coin</p>
+                                    <p class="text-dark fs-5 fw-bold mb-0"><i
+                                        class="fa-solid fa-indian-rupee-sign"></i>7899.00</p>   
+                                        <p>INCLUSIVE OF MAKING CHARGES AND ALL TAXES</p> 
+                                        <p class="mb-34"> <span>Weight</span>:1 Gram</p> 
+                                        <div class="d-flex mb-4">
+                                        <i class="fa fa-star text-secondary"></i>
+                                        <i class="fa fa-star text-secondary"></i>
+                                        <i class="fa fa-star text-secondary"></i>
+                                        <i class="fa fa-star text-secondary"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <h4>Product description</h4>                               
+
+                                    <p class="mb-4">This 24-karat gold coin represents the 1 GM Fine Gold motif and weighs 1 gram. 
+                                        The head side of the coin displays the Read More</p>
+                                    <div class="input-group quantity mb-5" style="width: 100px;">
+                                        <div class="input-group-btn">
+                                            <button class="btn btn-sm btn-minus rounded-circle bg-light border" >
+                                                <i class="fa fa-minus"></i>
+                                            </button>
+                                        </div>
+                                        <input type="text" class="form-control form-control-sm text-center border-0" value="1">
+                                        <div class="input-group-btn">
+                                            <button class="btn btn-sm btn-plus rounded-circle bg-light border">
+                                                <i class="fa fa-plus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn border border-secondary rounded-pill px-4 py-2 mb-4 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+                                    <a href="#" class="btn border border-secondary rounded-pill px-4 py-2 mb-4 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i>Buy Now</a>
+
+                                </div>
+                                <div class="col-lg-1" >
+                                    <div class="border rounded">
+                                        <a href="#">
+                                            <img src="img/main-nio.png" class="img-fluid rounded" alt="Image">
+                                            
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-1">
+                                    <div class="border rounded">
+                                        <a href="#">
+                                            <img src="img/main-nio.png" class="img-fluid rounded" alt="Image">
+                                        </a>
+                                    </div>
+                                </div>
+                                 <div class="col-lg-1">
+                                    <div class="border rounded">
+                                        <a href="#">
+                                            <img src="img/main-nio.png" class="img-fluid rounded" alt="Image">
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- <div class="col-lg-12"> -->
+                                    <!-- <nav>
+                                        <div class="nav nav-tabs mb-3">
+                                            <button class="nav-link active border-white border-bottom-0" type="button" role="tab"
+                                                id="nav-about-tab" data-bs-toggle="tab" data-bs-target="#nav-about"
+                                                aria-controls="nav-about" aria-selected="true">Description</button>
+                                            <button class="nav-link border-white border-bottom-0" type="button" role="tab"
+                                                id="nav-mission-tab" data-bs-toggle="tab" data-bs-target="#nav-mission"
+                                                aria-controls="nav-mission" aria-selected="false">Reviews</button>
+                                        </div>
+                                    </nav> -->
+                                    <div class="tab-content mb-5">
+                                        <div class="tab-pane active" id="nav-about" role="tabpanel" aria-labelledby="nav-about-tab">
+                                            <p>The generated Lorem Ipsum is therefore always free from repetition injected humour, or non-characteristic words etc. 
+                                                Susp endisse ultricies nisi vel quam suscipit </p>
+                                            <p>Sabertooth peacock flounder; chain pickerel hatchetfish, pencilfish snailfish filefish Antarctic 
+                                                icefish goldeye aholehole trumpetfish pilot fish airbreathing catfish, electric ray sweeper.</p>
+                                            <div class="px-2">
+                                                <div class="row g-4" id="main-border">
+                                                    <div class="col-6">
+                                                        <div class="row bg-light align-items-center text-center justify-content-center py-2">
+                                                            <div class="col-6">
+                                                                <p class="mb-0">Weight</p>
+                                                            </div>
+                                                            <div class="col-6">
+                                                                <p class="mb-0">1 kg</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row text-center align-items-center justify-content-center py-2">
+                                                            <div class="col-6">
+                                                                <p class="mb-0">Country of Origin</p>
+                                                            </div>
+                                                            <div class="col-6">
+                                                                <p class="mb-0">Agro Farm</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row bg-light text-center align-items-center justify-content-center py-2">
+                                                            <div class="col-6">
+                                                                <p class="mb-0">Quality</p>
+                                                            </div>
+                                                            <div class="col-6">
+                                                                <p class="mb-0">Organic</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row text-center align-items-center justify-content-center py-2">
+                                                            <div class="col-6">
+                                                                <p class="mb-0">Сheck</p>
+                                                            </div>
+                                                            <div class="col-6">
+                                                                <p class="mb-0">Healthy</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row bg-light text-center align-items-center justify-content-center py-2">
+                                                            <div class="col-6">
+                                                                <p class="mb-0">Min Weight</p>
+                                                            </div>
+                                                            <div class="col-6">
+                                                                <p class="mb-0">250 Kg</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="nav-mission" role="tabpanel" aria-labelledby="nav-mission-tab">
+                                            <div class="d-flex">
+                                                <img src="img/avatar.jpg" class="img-fluid rounded-circle p-3" style="width: 100px; height: 100px;" alt="">
+                                                <div class="">
+                                                    <p class="mb-2" style="font-size: 14px;">April 12, 2024</p>
+                                                    <div class="d-flex justify-content-between">
+                                                        <h5>Jason Smith</h5>
+                                                        <div class="d-flex mb-3">
+                                                            <i class="fa fa-star text-secondary"></i>
+                                                            <i class="fa fa-star text-secondary"></i>
+                                                            <i class="fa fa-star text-secondary"></i>
+                                                            <i class="fa fa-star text-secondary"></i>
+                                                            <i class="fa fa-star"></i>
+                                                        </div>
+                                                    </div>
+                                                    <p>The generated Lorem Ipsum is therefore always free from repetition injected humour, or non-characteristic 
+                                                        words etc. Susp endisse ultricies nisi vel quam suscipit </p>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex">
+                                                <img src="img/avatar.jpg" class="img-fluid rounded-circle p-3" style="width: 100px; height: 100px;" alt="">
+                                                <div class="">
+                                                    <p class="mb-2" style="font-size: 14px;">April 12, 2024</p>
+                                                    <div class="d-flex justify-content-between">
+                                                        <h5>Sam Peters</h5>
+                                                        <div class="d-flex mb-3">
+                                                            <i class="fa fa-star text-secondary"></i>
+                                                            <i class="fa fa-star text-secondary"></i>
+                                                            <i class="fa fa-star text-secondary"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                        </div>
+                                                    </div>
+                                                    <p class="text-dark">The generated Lorem Ipsum is therefore always free from repetition injected humour, or non-characteristic 
+                                                        words etc. Susp endisse ultricies nisi vel quam suscipit </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="nav-vision" role="tabpanel">
+                                            <p class="text-dark">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam
+                                                amet diam et eos labore. 3</p>
+                                            <p class="mb-0">Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore.
+                                                Clita erat ipsum et lorem et sit</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <form action="#">
+                                    <h4 class="mb-5 fw-bold">Leave a Reply</h4>
+                                    <div class="row g-4">
+                                        <div class="col-lg-6">
+                                            <div class="border-bottom rounded">
+                                                <input type="text" class="form-control border-0 me-4" placeholder="Yur Name *">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="border-bottom rounded">
+                                                <input type="email" class="form-control border-0" placeholder="Your Email *">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="border-bottom rounded my-4">
+                                                <textarea name="" id="" class="form-control border-0" cols="30" rows="8" placeholder="Your Review *" spellcheck="false"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="d-flex justify-content-between py-3 mb-5">
+                                                <div class="d-flex align-items-center">
+                                                    <p class="mb-0 me-3">Please rate:</p>
+                                                    <div class="d-flex align-items-center" style="font-size: 12px;">
+                                                        <i class="fa fa-star text-muted"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="btn border border-secondary text-primary rounded-pill px-4 py-3"> Post Comment</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form> -->
+                            </div>
+                        </div>
+                        
+                    <h1 class="fw-bold mb-01">Related products</h1>
+                    <div class="vesitable">
+                        <div class="owl-carousel vegetable-carousel justify-content-center">
+                            <div class="border border-primary rounded position-relative vesitable-item">
+                                <div class="fruite-img">
+                                    <img src="./img/main-nio.png" class="img-fluid-1 w-50 " alt="">
+                                </div>
+                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                                    style="top: 15px; right:4px; font-size: 10px;">Gold Coin</div>
+                                <div class="text-white  px-3 py-1  position-absolute"
+                                    style="top: 8px; right:80px; font-size: 20px ;"><i class="fa-regular fa-heart"></i></div>
+            
+                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                    <h4>1 GM Gold Coin</h4>
+                                    <p> Nio 24K Gold Bar</p>
+                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                        <p class="text-dark fs-5 fw-bold mb-0"><i class="fa-solid fa-indian-rupee-sign"></i>7899.00
+                                        </p>
+                                        <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                                class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="border border-primary rounded position-relative vesitable-item">
+                                <div class="fruite-img">
+                                    <img src="./img/main-nio.png" class="img-fluid-1 w-50 " alt="">
+                                </div>
+                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                                    style="top: 15px; right:4px; font-size: 10px;">Gold Coin</div>
+                                <div class="text-white  px-3 py-1  position-absolute"
+                                    style="top: 8px; right:80px; font-size: 20px ;"><i class="fa-regular fa-heart"></i></div>
+            
+                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                    <h4>1 GM Gold Coin</h4>
+                                    <p> Nio 24K Gold Bar</p>
+                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                        <p class="text-dark fs-5 fw-bold mb-0"><i class="fa-solid fa-indian-rupee-sign"></i>7899.00
+                                        </p>
+                                        <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                                class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="border border-primary rounded position-relative vesitable-item">
+                                <div class="fruite-img">
+                                    <img src="./img/main-nio.png" class="img-fluid-1 w-50 " alt="">
+                                </div>
+                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                                    style="top: 15px; right:4px; font-size: 10px;">Gold Coin</div>
+                                <div class="text-white  px-3 py-1  position-absolute"
+                                    style="top: 8px; right:80px; font-size: 20px ;"><i class="fa-regular fa-heart"></i></div>
+            
+                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                    <h4>1 GM Gold Coin</h4>
+                                    <p> Nio 24K Gold Bar</p>
+                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                        <p class="text-dark fs-5 fw-bold mb-0"><i class="fa-solid fa-indian-rupee-sign"></i>7899.00
+                                        </p>
+                                        <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                                class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="border border-primary rounded position-relative vesitable-item">
+                                <div class="fruite-img">
+                                    <img src="./img/main-nio.png" class="img-fluid-1 w-50 " alt="">
+                                </div>
+                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                                    style="top: 15px; right:4px; font-size: 10px;">Gold Coin</div>
+                                <div class="text-white  px-3 py-1  position-absolute"
+                                    style="top: 8px; right:80px; font-size: 20px ;"><i class="fa-regular fa-heart"></i></div>
+            
+                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                    <h4>1 GM Gold Coin</h4>
+                                    <p> Nio 24K Gold Bar</p>
+                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                        <p class="text-dark fs-5 fw-bold mb-0"><i class="fa-solid fa-indian-rupee-sign"></i>7899.00
+                                        </p>
+                                        <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                                class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="border border-primary rounded position-relative vesitable-item">
+                                <div class="fruite-img">
+                                    <img src="./img/main-nio.png" class="img-fluid-1 w-50 " alt="">
+                                </div>
+                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                                    style="top: 15px; right:4px; font-size: 10px;">Gold Coin</div>
+                                <div class="text-white  px-3 py-1  position-absolute"
+                                    style="top: 8px; right:80px; font-size: 20px ;"><i class="fa-regular fa-heart"></i></div>
+            
+                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                    <h4>1 GM Gold Coin</h4>
+                                    <p> Nio 24K Gold Bar</p>
+                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                        <p class="text-dark fs-5 fw-bold mb-0"><i class="fa-solid fa-indian-rupee-sign"></i>7899.00
+                                        </p>
+                                        <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                                class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="border border-primary rounded position-relative vesitable-item">
+                                <div class="fruite-img">
+                                    <img src="./img/main-nio.png" class="img-fluid-1 w-50 " alt="">
+                                </div>
+                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                                    style="top: 15px; right:4px; font-size: 10px;">Gold Coin</div>
+                                <div class="text-white  px-3 py-1  position-absolute"
+                                    style="top: 8px; right:80px; font-size: 20px ;"><i class="fa-regular fa-heart"></i></div>
+            
+                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                    <h4>1 GM Gold Coin</h4>
+                                    <p> Nio 24K Gold Bar</p>
+                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                        <p class="text-dark fs-5 fw-bold mb-0"><i class="fa-solid fa-indian-rupee-sign"></i>7899.00
+                                        </p>
+                                        <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                                class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="border border-primary rounded position-relative vesitable-item">
+                                <div class="fruite-img">
+                                    <img src="./img/main-nio.png" class="img-fluid-1 w-50 " alt="">
+                                </div>
+                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                                    style="top: 15px; right:4px; font-size: 10px;">Gold Coin</div>
+                                <div class="text-white  px-3 py-1  position-absolute"
+                                    style="top: 8px; right:80px; font-size: 20px ;"><i class="fa-regular fa-heart"></i></div>
+            
+                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                    <h4>1 GM Gold Coin</h4>
+                                    <p> Nio 24K Gold Bar</p>
+                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                        <p class="text-dark fs-5 fw-bold mb-0"><i class="fa-solid fa-indian-rupee-sign"></i>7899.00
+                                        </p>
+                                        <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                                class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="border border-primary rounded position-relative vesitable-item">
+                                <div class="fruite-img">
+                                    <img src="./img/main-nio.png" class="img-fluid-1 w-50 " alt="">
+                                </div>
+                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                                    style="top: 15px; right:4px; font-size: 10px;">Gold Coin</div>
+                                <div class="text-white  px-3 py-1  position-absolute"
+                                    style="top: 8px; right:80px; font-size: 20px ;"><i class="fa-regular fa-heart"></i></div>
+            
+                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                    <h4>1 GM Gold Coin</h4>
+                                    <p> Nio 24K Gold Bar</p>
+                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                        <p class="text-dark fs-5 fw-bold mb-0"><i class="fa-solid fa-indian-rupee-sign"></i>7899.00
+                                        </p>
+                                        <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                                class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+      
+
+
+            
+
+         <!-- Certificate section -->
+
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="bg-light p-5 rounded">
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="counter bg-white rounded p-5">
+                            <i class="fa fa-users text-secondary"></i>
+                            <h4>satisfied customers</h4>
+                            <h1>1963</h1>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="counter bg-white rounded p-5">
+                            <i class="fa fa-users text-secondary"></i>
+                            <h4>quality of service</h4>
+                            <h1>99%</h1>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="counter bg-white rounded p-5">
+                            <i class="fa fa-users text-secondary"></i>
+                            <h4>quality certificates</h4>
+                            <h1>33</h1>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="counter bg-white rounded p-5">
+                            <i class="fa fa-users text-secondary"></i>
+                            <h4>Available Products</h4>
+                            <h1>789</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- .....bulk inquiry... -->
+<section class="inquiry">
+
+        <!-- <h2>Responsive Two Column Layout</h2>
+        <p>Resize the browser window to see the responsive effect (the columns will stack on top of each other instead of floating next to each other, when the screen is less than 600px wide).</p>
+       -->
+        <div class="row">
+          <div class="column" style="background-color:#eee;">
+            <h2>Column 1</h2>
+            <p>Some text..</p>
+          </div>
+          <div class="column" style="background-color:#eee;">
+            <h2>Column 2</h2>
+            <p>Some text..</p>
+          </div>
+        </div>
+        
+       
+      
+    </section>
+
+        <!-- .....bulk inquiry... -->
+
+
+  
+
+        <div class="container-fluid testimonial py-5">
+            <div class="container py-5">
+                <div class="testimonial-header text-center">
+                    <h4 class="text-primary">Our Testimonial</h4>
+                    <h1 class="display-5 mb-5 text-dark">Our Client Saying!</h1>
+                </div>
+                <div class="owl-carousel testimonial-carousel">
+                    <div class="testimonial-item img-border-radius bg-light rounded p-4">
+                        <div class="position-relative">
+                            <i class="fa fa-quote-right fa-2x text-secondary position-absolute"
+                                style="bottom: 30px; right: 0;"></i>
+                            <div class="mb-4 pb-4 border-bottom border-secondary">
+                                <p class="mb-0"> "Nio expertise ensures every piece is genuine and top-quality. Their
+                                    professionalism and reliability make them our top choice for antique jewelry."
+                                </p>
+                            </div>
+                            <div class="d-flex align-items-center flex-nowrap">
+                                <div class="bg-secondary rounded">
+                                    <img src="./img/pexels-photo-2379005.jpeg" class="img-fluid rounded"
+                                        style="width: 100px; height: 100px;" alt="">
+                                </div>
+                                <div class="ms-4 d-block">
+                                    <h4 class="text-dark">Vijay Patel</h4>
+                                    <p class="m-0 pb-3">Businessmen</p>
+                                    <div class="d-flex pe-5">
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item img-border-radius bg-light rounded p-4">
+                        <div class="position-relative">
+                            <i class="fa fa-quote-right fa-2x text-secondary position-absolute"
+                                style="bottom: 30px; right: 0;"></i>
+                            <div class="mb-4 pb-4 border-bottom border-secondary">
+                                <p class="mb-0"> "Nio expertise ensures every piece is genuine and top-quality. Their
+                                    professionalism and reliability make them our top choice for antique jewelry."
+                                </p>
+                            </div>
+                            <div class="d-flex align-items-center flex-nowrap">
+                                <div class="bg-secondary rounded">
+                                    <img src="./img/pexels-photo-2379005.jpeg" class="img-fluid rounded"
+                                        style="width: 100px; height: 100px;" alt="">
+                                </div>
+                                <div class="ms-4 d-block">
+                                    <h4 class="text-dark">Vijay Patel</h4>
+                                    <p class="m-0 pb-3">Businessmen</p>
+                                    <div class="d-flex pe-5">
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item img-border-radius bg-light rounded p-4">
+                        <div class="position-relative">
+                            <i class="fa fa-quote-right fa-2x text-secondary position-absolute"
+                                style="bottom: 30px; right: 0;"></i>
+                            <div class="mb-4 pb-4 border-bottom border-secondary">
+                                <p class="mb-0"> "Nio expertise ensures every piece is genuine and top-quality. Their
+                                    professionalism and reliability make them our top choice for antique jewelry."
+                                </p>
+                            </div>
+                            <div class="d-flex align-items-center flex-nowrap">
+                                <div class="bg-secondary rounded">
+                                    <img src="./img/pexels-photo-2379005.jpeg" class="img-fluid rounded"
+                                        style="width: 100px; height: 100px;" alt="">
+                                </div>
+                                <div class="ms-4 d-block">
+                                    <h4 class="text-dark">Vijay Patel</h4>
+                                    <p class="m-0 pb-3">Businessmen</p>
+                                    <div class="d-flex pe-5">
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section>
+
+            <div class="section-header">
+                <div class="container">
+                    <h2>Contact Us</h2>
+                </div>
+            </div>
+    
+            <div class="container">
+                <div class="row">
+    
+                    <div class="contact-info">
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon">
+                                <i class="fas fa-home"></i>
+                            </div>
+    
+                            <div class="contact-info-content">
+                                <h4>Address</h4>
+                                <p>Shop no.7, Jewel World,<br /> Cotton Exchange building <br />Zaveri Bazaar,Kalbadevi,
+                                    <br />Mumbai 400 002
+                                </p>
+                                </p>
+                            </div>
+                        </div>
+    
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+    
+                            <div class="contact-info-content">
+                                <h4>Phone</h4>
+                                <p>+91 91379 62318</p>
+                            </div>
+                        </div>
+    
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+    
+                            <div class="contact-info-content">
+                                <h4>Email</h4>
+                                <p>ntamerrwael@mfano.ga</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="contact-form">
+                        <form action="" id="contact-form">
+                            <h2>Send Message</h2>
+                            <div class="input-box">
+                                <input type="text" required="true" name="">
+                                <span>Full Name</span>
+                            </div>
+    
+                            <div class="input-box">
+                                <input type="email" required="true" name="">
+                                <span>Email</span>
+                            </div>
+    
+                            <div class="input-box">
+                                <textarea required="true" name=""></textarea>
+                                <span>Type your Message...</span>
+                            </div>
+    
+                            <div class="input-box">
+                                <input type="submit" value="Send" name="">
+                            </div>
+                        </form>
+                    </div>
+    
+                </div>
+            </div>
+        </section>
+
+   <!-- Footer Start -->
+   
+
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary border-3 border-primary rounded-circle back-to-top"><i
+                class="fa fa-arrow-up"></i></a>
+    
+    
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+
+</html>
